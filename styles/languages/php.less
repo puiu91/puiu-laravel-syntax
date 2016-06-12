@@ -1,0 +1,61 @@
+ /* ================================================================================================================== */
+ /*
+ /* Opening Brace
+ /*
+ /* ================================================================================================================== */
+
+.punctuation {
+  &.section {
+    &.embedded {
+      &.begin {
+        &.php {
+          color: @rgba-primary-0;
+        }
+      }
+    }
+  }
+}
+
+/* ================================================================================================================== */
+/*
+/* Source Code
+/*
+/* ================================================================================================================== */
+
+.source.php {
+
+   /**
+    * 1 - Remove underline from namespace field.
+    */
+
+   .entity {
+     &.name.type {
+       text-decoration: none; /* 1 */
+     }
+   }
+
+  /**
+   * 1 - Targets ["] and ['] that wrap a string.
+   */
+
+  .punctuation {
+    &.definition {
+      &.string {
+        color: @rgba-secondary-1-0; /* 1 */
+      }
+    }
+  }
+
+  /**
+   * 1 - Targets object methods being called like `decodeJson()` in `$this->decodeJson()`.
+   */
+
+  .meta {
+    &.function-call {
+      &.object {
+        color: @rgba-primary-0; /* 1 */
+      }
+    }
+  }
+
+}
