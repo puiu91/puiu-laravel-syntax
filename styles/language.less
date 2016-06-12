@@ -5,14 +5,14 @@
 }
 
 .keyword {
-  color: @rgba-primary-0; /* puiu */
+  color: @t-color--primary; /* puiu */
 
   &.control {
-    color: @rgba-primary-0; /* puiu */
+    color: @t-color--primary; /* puiu */
   }
 
   &.operator {
-    color: @rgba-primary-1; /* puiu */
+    color: @t-color--secondary; /* puiu */
   }
 
   &.other.special-method {
@@ -25,11 +25,11 @@
 }
 
 .storage {
-  color: @rgba-primary-0; /* puiu */
+  color: @t-color--primary; /* puiu */
 }
 
 .constant {
-  color: @rgba-primary-0; /* puiu */
+  color: @t-color--primary; /* puiu */
 
   &.character.escape {
     color: @cyan;
@@ -66,8 +66,8 @@
 }
 
 .string {
-  // color: @rgba-primary-1; /* puiu */
-  color: @rgba-secondary-2-2;
+  color: @t-color--tertiary; /* puiu */
+  // color: @rgba-secondary-2-2;
 
   &.regexp {
     color: @cyan;
@@ -85,7 +85,7 @@
 .punctuation {
   &.definition {
     &.comment {
-      color: @light-gray;
+      color: @t-comment;
     }
 
     &.string,
@@ -119,11 +119,11 @@
 
 .support {
   &.class {
-    color: @rgba-secondary-1-0; /* puiu */
+    color: @t-color--secondary; /* puiu */
   }
 
   &.function  {
-    color: @rgba-primary-0;
+    color: @t-color--primary;
 
     &.any-method {
       color: @blue;
@@ -133,18 +133,18 @@
 
 .entity {
   &.name.function {
-    color: @rgba-secondary-1-0; /* puiu */
+    color: @t-color--secondary; /* puiu */
   }
   &.name.type {
-    color: @rgba-secondary-1-0; /* puiu */
+    color: @t-color--secondary; /* puiu */
     text-decoration: underline;
   }
 
   &.other.inherited-class {
-    color: @rgba-secondary-1-0; /* puiu */
+    color: @t-color--secondary; /* puiu */
   }
   &.name.class, &.name.type.class {
-    color: @rgba-secondary-1-0; /* puiu */
+    color: @t-color--secondary; /* puiu */
   }
 
   &.name.section {
